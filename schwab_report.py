@@ -20,10 +20,10 @@ dtend = datetime.datetime(2019, 12, 25, tzinfo=ofxtools.utils.UTC)
 
 kr = CryptFileKeyring()
 kr.keyring_key = '1234qwer'
-username = keyring.get_password('schwab', 'username')
-password = keyring.get_password('schwab', 'password')
-rothacctno = keyring.get_password('schwab', 'rothacctno')
-brokerageacctno = keyring.get_password('schwab', 'brokerageacctno')
+username = kr.get_password('schwab', 'username')
+password = kr.get_password('schwab', 'password')
+rothacctno = kr.get_password('schwab', 'rothacctno')
+brokerageacctno = kr.get_password('schwab', 'brokerageacctno')
 
 client = ofxtools.OFXClient('https://ofx.schwab.com/cgi_dev/ofx_server',
                             userid=username,
