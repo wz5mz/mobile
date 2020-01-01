@@ -9,7 +9,6 @@ def send_var(testvar):
                        "--user 0 "
                        "-a net.dinglish.tasker.schwabreport "
                        "-e testvar '{}' ".format(testvar.replace("''","")))
-    print(args)
-#    subprocess.Popen(args)
+    subprocess.Popen(args)
 
 send_var('$92,000.00')
