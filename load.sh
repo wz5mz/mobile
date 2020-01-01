@@ -9,3 +9,5 @@ do
 done
 mv -v ~/.termux/tasker/mobile/* ~/.termux/tasker/
 rm -rf mobile
+
+echo "hello world"
