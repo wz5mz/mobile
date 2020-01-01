@@ -11,4 +11,4 @@ def send_var(testvar):
                        "-e testvar '{}' ".format(testvar.replace("'","")))
     subprocess.Popen(args)
 
-send_var([(1,2), 'wade', 69, {key:value}])
+send_var([(1,2), 'wade', 69, {"key":"value"}])
